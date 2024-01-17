@@ -105,6 +105,35 @@ h6 {
 	  background-repeat: no-repeat;
 	  background-position: 50% 50%;
   }
+
+  .container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Responsif di perangkat dengan lebar layar maksimum 768px */
+@media (max-width: 768px) {
+  .container {
+    padding: 10px;
+  }
+  
+  .img {
+    width: 80%;
+  }
+}
+
+/* Responsif di perangkat dengan lebar layar maksimum 480px */
+@media (max-width: 480px) {
+  .container {
+    padding: 5px;
+  }
+  
+  .img {
+    width: 60%;
+  }
+}
     </style>
 </head>
 
@@ -113,14 +142,11 @@ h6 {
     <div class="container">
     <div class="col-xs-12">
             <div class="text-center" style="padding-top: 30px; padding-bottom: 30px;">
-                <img src="1.png">
+                <img class="img" src="1.png">
                 <h2 style="color: #ffffff; padding-top: 20px;">Life's sweet adventure? Start it in Ressugar catalogue.</h2>
             </div>
     </div>
-    </div>
-
-
-    <div class="container">
+    
     <div class="col-xs-12">
             <div class="text-center">
                 <div style="padding-bottom: 30px;">
@@ -140,11 +166,11 @@ h6 {
                 </div>
             </div>
     </div>
+    
+    <div class="text-center">
+        <a href="https://www.ordermerch.net/" style="color: #34312f;" target="_blank">powered by Ressugar</a>
     </div>
-
-        <div class="text-center">
-            <a href="https://www.ordermerch.net/" style="color: #34312f;" target="_blank">powered by Ressugar</a>
-        </div>
+</div>
 
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
